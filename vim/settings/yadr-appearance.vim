@@ -10,7 +10,7 @@ if has("gui_running")
   set columns=190
 
   if has("gui_gtk2")
-    set guifont=DejaVu\ Sans\ Mono\ 12,Inconsolata\ 13,Inconsolata\ XL\ 12,Monaco\ 12
+    set guifont=DejaVu\ Sans\ Mono\ 14,Inconsolata\ 15,Inconsolata\ XL\ 14,Monaco\ 14
   else
     set guifont=Monaco:h14,Inconsolata:h17,Inconsolata\ XL:h14,
   end
@@ -27,7 +27,8 @@ endif
 " Tell the term has 256 colors.
 set t_Co=256
 
-colorscheme solarized
+"colorscheme solarized
+colorscheme molokai
 set background=dark
 
 " Remove menu bar and tool bar.
