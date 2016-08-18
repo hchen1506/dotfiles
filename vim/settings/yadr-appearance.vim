@@ -27,7 +27,7 @@ endif
 " Tell the term has 256 colors.
 set t_Co=256
 
-"colorscheme solarized
+" colorscheme solarized
 colorscheme molokai
 set background=dark
 
