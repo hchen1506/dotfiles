@@ -32,9 +32,20 @@ Bundle "goldfeld/ctrlr.vim"
 
 Bundle "fidian/hexmode"
 Bundle "szw/vim-g"
+
+Bundle 'Valloric/YouCompleteMe'
+" You may need to run followings to make sure the YouCompleteMe run correctly.
+" cd ~/.vim/bundle/YouCompleteMe
+" ./install.py --clang-completer
 if filereadable(expand('~/.vimrc_internal'))
   source ~/.vimrc_internal
 else
-  Bundle 'Valloric/YouCompleteMe'
+  Bundle 'google/vim-maktaba'
+  Bundle 'google/vim-glaive'
+  Bundle 'google/vim-codefmt'
+
+  noremap <C-F> :FormatLines<CR>
+  inoremap <C-F><C-O> :FormatLines<CR>
+  noremap <C-X> :YcmCompleter FixIt<CR>
   let g:ycm_global_ycm_extra_conf = '~/.vim/chromium.ycm_extra_conf.py'
 endif
